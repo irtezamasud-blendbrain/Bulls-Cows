@@ -14,6 +14,8 @@ public:
 	virtual void OnInput(const FString& Input) override;
 	void SetupGame();
 	void EndGame();
+	void ProcessGuess(FString guess);
+bool IsIsogram(FString word);
 
 	// Your declarations go below!
 private:
@@ -21,4 +23,5 @@ private:
 	int32 HiddenWordLength;
 	int32 Lives;
 	bool bGameOver;
+	bool bIsIsogram;
 };
